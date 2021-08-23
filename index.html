@@ -1,0 +1,59 @@
+<html>
+    <head>
+<title>Aparecida Nutrição</title>
+<link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="h1n1">Aparecida Nutrição Pega na minha mão</h1>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <h2>Meus Pacientes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Peso (kg)</th>
+                            <th>Altura (m)</th>
+                            <th>Gordura Corporal (%)</th>
+                            <th>IMC</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-pacientes">
+                        <tr class="paciente" id="primeiro-paciente">
+                            <td class="info-nome">Paulo</td>
+                            <td class="info-peso">70</td>
+                            <td class="info-altura">2.00</td>
+                            <td class="info-gordura">10</td>
+                            <td class="info-imc">0</td>
+                        </tr>
+                        <tr class="paciente" id="segundo-paciente">
+                            <td class="info-nome">Oluap</td>
+                            <td class="info-peso">90</td>
+                            <td class="info-altura">1.80</td>
+                            <td class="info-gordura">10</td>
+                            <td class="info-imc">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Adicionar novo paciente</h2>
+                <form id="information">
+                    <label for="nome1">Nome:</label><br>
+                    <input type="text" id="nome1" placeholder="Digite o nome de seu paciente"><br>
+                    <label for="peso1">Peso:</label><br>
+                    <input type="text" id="peso1" placeholder="Digite o peso do seu paciente"><br>
+                    <label for="altura1">Altura:</label><br>
+                    <input type="text" id="altura1" placeholder="Digite a altura de seu paciente"><br>
+                    <label for="porcentagemdegordura1">% de Gordura:</label><br>
+                    <input type="text" id="porcentagemdegordura1" placeholder="Digite a % de gordura paciente"><br><br>
+                    <button id="botaozao">Adicionar</button>
+                  </form>
+            </section>
+        </main>
+        <script src="form.js"></script>
+        <script src="calcula_imc.js"></script>
+    </body>
+</html>
